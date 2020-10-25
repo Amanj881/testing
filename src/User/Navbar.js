@@ -15,7 +15,7 @@ function Navbar({searching,menuOptions}) {
 
 
  const getIssues = () => {
-     axios.get('/getIssues').then((result) => {
+     axios.get('https://lawj.herokuapp.com/getIssues').then((result) => {
       let res = result.data.map((e,index)=>{
        return (
        	<li className="rounded-sm relative px-3 py-1 hover:bg-gray-100" key={index}>
