@@ -1,9 +1,9 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://lawj.herokuapp.com/api",
+  baseURL: "http://law-b.herokuapp.com/api",
    headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/json',
             'Accept': 'application/json',
             'dataType':'jsonp',
             }
