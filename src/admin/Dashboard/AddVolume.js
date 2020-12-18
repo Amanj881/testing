@@ -73,7 +73,7 @@ const deleteVolume = (uuid,e) => {
 		<div className="flex flex-col mx-4 py-4">
 			<Link to="/create" className=" w-32 text-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Create</Link>
     		{data != '' ?
-        (<div className="flex-shrink py-16">
+        (<div className="mx-4">
                   <Table headers={Object.keys(Schema)} rows={data} />
               </div>   ):<div className="text-center shadow-lg text-3xl font-semibold mx-auto">No Data FOund </div> }
             
