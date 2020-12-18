@@ -15,7 +15,7 @@ function Navbar({searching,menuOptions}) {
 
 
  const getIssues = () => {
-     axios.get('https://lawj.herokuapp.com/getIssues').then((result) => {
+     axios.get('http://infinite-plateau-98501.herokuapp.com/getIssues').then((result) => {
      	console.log(result);
       let res = result.data.map((e,index)=>{
        return (
