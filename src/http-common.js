@@ -4,7 +4,8 @@ export default axios.create({
   baseURL: "https://lawj.herokuapp.com/api",
    headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'dataType':'jsonp',
             }
  
 });
