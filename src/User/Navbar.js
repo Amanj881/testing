@@ -15,7 +15,7 @@ function Navbar({searching,menuOptions}) {
 
 
  const getIssues = () => {
-     axios.get('http://law-b.herokuapp.com/getIssues').then((result) => {
+     axios.get('https://law-b.herokuapp.com/getIssues').then((result) => {
      	console.log(result);
       let res = result.data.map((e,index)=>{
        return (
