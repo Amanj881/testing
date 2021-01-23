@@ -21,7 +21,7 @@ export const Sidebar = ({ width, height, options,label }) => {
     setX(0);
   }, []);
 
-  const list = options.map(parts =><a href={`/${parts.url}`} key={parts.id}> <li key={parts.id} className="border-b py-8 italic text-2xl font-bold" style={{listStyle:"none"}}>{parts.label}</li></a>)
+  const list = options.map((parts,index) =><a href={`/${parts.url}`} key={index}> <li key={parts.id} className="border-b py-8 italic text-2xl font-bold" style={{listStyle:"none"}}>{parts.label}</li></a>)
 
 
   
